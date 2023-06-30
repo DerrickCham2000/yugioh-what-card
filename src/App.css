@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  font-family: Roboto;
 }
 
 .App-logo {
@@ -11,6 +11,95 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.topbar {
+  text-align: left;
+  padding-left: 50px;
+  background-color: #003366;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+
+.game-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-wrapper {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-image {
+  padding-right: 80px;
+  height: 70px;
+  width: 60px;
+  position: absolute;
+  z-index: 10;
+}
+
+.submit-button {
+  width: 100px;
+  height: 50px;
+  font-family: Roboto;
+}
+
+.submit-button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.input-area {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+.noSubmit {
+  background-color: #f8f8f8;
+}
+
+.correct {
+  background-color: #99FF99;
+}
+
+.incorrect {
+  background-color: #FF9999;
+}
+
+.blurred {
+  opacity: 0.5;
+}
+
+.correct-cards {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.name-blocker {
+  width: 350px;
+  height: 50px;
+  margin-bottom: 520px;
+  margin-right: 70px;
+  background: black;
+  position: absolute;
+  z-index: 10;
 }
 
 .App-header {
