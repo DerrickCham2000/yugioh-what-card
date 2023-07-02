@@ -48,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <div className="topbar">
         Guess the Card: Yugioh Edition
       </div>
@@ -70,18 +71,20 @@ function App() {
         </div>
         <div>
           <form onSubmit={handleSubmit}>
-          <label>
-            Enter Your Attempt Here:
-            <input 
-              className={`${correct === 'true' && 'correct'} ${correct === 'false' && 'incorrect'} noSubmit input-area`}
-              type="text" 
-              value={nameAttempt}
-              onChange={(e) => setNameAttempt(e.target.value)}
-            />
-          </label>
-          <div className='submit-button-wrapper'>
-            <input className='submit-button' type="submit" />
-          </div>
+            <div>
+              Enter Your Attempt Here:
+            </div>
+            <label>
+              <input 
+                className={`${correct === 'true' && 'correct'} ${correct === 'false' && 'incorrect'} noSubmit input-area`}
+                type="text" 
+                value={nameAttempt}
+                onChange={(e) => setNameAttempt(e.target.value)}
+              />
+            </label>
+            <div className='submit-button-wrapper'>
+              <input className='submit-button' type="submit" />
+            </div>
           </form>
         </div>
       </div>
